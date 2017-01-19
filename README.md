@@ -15,7 +15,9 @@ This ebuild will be updated automatically (coming soon)
 Copy `edk2-ovmf-x64.conf` to `/etc/portage/repos.conf/`.
 Run these commands:
 ```
-mkdir /usr/local/portage/edk2-ovmf-x64/metadata
+mkdir /usr/local/portage/edk2-ovmf-x64/{metadata,profiles}
+chown -R portage:portage /usr/local/portage/edk2-ovmf-x64
+echo 'edk2-ovmf-x64' > /usr/local/portage/edk2-ovmf-x64/profiles/repo_name
 echo 'masters = gentoo' > /usr/local/portage/edk2-ovmf-x64/metadata/layout.conf
 ```
 
