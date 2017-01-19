@@ -15,12 +15,12 @@ This ebuild will be updated automatically (coming soon)
 Copy `edk2-ovmf-x64.conf` to `/etc/portage/repos.conf/`.
 Run these commands:
 ```
-mkdir /usr/local/portage/edk2-ovmf-x64/{metadata,profiles}
-chown -R portage:portage /usr/local/portage/edk2-ovmf-x64
-echo 'edk2-ovmf-x64' > /usr/local/portage/edk2-ovmf-x64/profiles/repo_name
-echo 'masters = gentoo' > /usr/local/portage/edk2-ovmf-x64/metadata/layout.conf
+emaint sync --repo=edk2-ovmf-x64
+emerge --ask edk2-ovmf-x64
 ```
 
+Presently, the version number (date-based) and the build version are not updated automatically in the ebuild.
+Coming soon. If it is not installing because th build cannot be found, you may manually update this in the ebuild, or contact me and I will update it.
 
 ## With `layman`
 
