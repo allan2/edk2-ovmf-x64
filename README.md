@@ -13,6 +13,9 @@ This ebuild will be updated automatically (coming soon)
 ## To use this overlay locally:
 
 Copy `edk2-ovmf-x64.conf` to `/etc/portage/repos.conf/`.
+Run these commands:
+`mkdir /usr/local/portage/edk2-ovmf-x64/metadata`
+`echo 'masters = gentoo' > /usr/local/portage/edk2-ovmf-x64/metadata/layout.conf`
 
 
 ## With `layman`
