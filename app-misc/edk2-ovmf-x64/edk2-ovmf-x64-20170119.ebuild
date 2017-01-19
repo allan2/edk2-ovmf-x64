@@ -6,7 +6,7 @@ EAPI=5
 inherit eutils rpm
 
 BUILD="0-${PV}.b2420.g19ca06b"
-MY_PN="edk2-git-ovmf-x64"
+MY_PN="edk2.git-ovmf-x64"
 DESCRIPTION="TianoCore EDK2 OVMF Binary images by Gerd Hoffman"
 HOMEPAGE=""
 SRC_URI="https://www.kraxel.org/repos/jenkins/edk2/${MY_PN}-${BUILD}.noarch.rpm"
